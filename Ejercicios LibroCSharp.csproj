@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cap.10\UI\Registro\rInventarioT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cap.10\UI\Registro\rInventarioT.Designer.cs">
+      <DependentUpon>rInventarioT.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cap.9\Entidades\DueñoMascota.cs" />
     <Compile Include="Cap.10\Entidades\InventarioTienda.cs" />
     <Compile Include="Cap.9\Entidades\Productos.cs" />
@@ -70,6 +76,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cap.10\UI\Registro\rInventarioT.resx">
+      <DependentUpon>rInventarioT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cap.9\UI\Registro\rDueñoMascota.resx">
       <DependentUpon>rDueñoMascota.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,9 +110,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Cap.10\BLL\" />
-    <Folder Include="Cap.10\UI\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

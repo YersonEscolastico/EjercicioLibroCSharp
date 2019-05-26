@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Ejercicios_LibroCSharp.Cap._9.UI.Registro.Inventario_Tienda;
 using Ejercicios_LibroCSharp.Cap._9.UI.Registro;
+using Ejercicios_LibroCSharp.Cap._10.UI.Registro;
 
 
 namespace Ejercicios_LibroCSharp
@@ -29,6 +30,12 @@ namespace Ejercicios_LibroCSharp
         private void Ejercicio3ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             rDueñoMascota frm = new rDueñoMascota();
+            frm.Show();
+        }
+
+        private void Ejercicio1ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            rInventarioT frm = new rInventarioT();
             frm.Show();
         }
     }

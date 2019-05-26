@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicios_LibroCSharp.Cap._9.Entidades
 {
-    public class ProductosT
+    public struct ProductosT
     {
         public string Nombre {get; set;}
         public string Codigo { get; set; }

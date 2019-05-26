@@ -61,14 +61,14 @@
             // ejercicio1ToolStripMenuItem
             // 
             this.ejercicio1ToolStripMenuItem.Name = "ejercicio1ToolStripMenuItem";
-            this.ejercicio1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ejercicio1ToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.ejercicio1ToolStripMenuItem.Text = "Ejercicio 1";
             this.ejercicio1ToolStripMenuItem.Click += new System.EventHandler(this.Ejercicio1ToolStripMenuItem_Click);
             // 
             // ejercicio3ToolStripMenuItem
             // 
             this.ejercicio3ToolStripMenuItem.Name = "ejercicio3ToolStripMenuItem";
-            this.ejercicio3ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ejercicio3ToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.ejercicio3ToolStripMenuItem.Text = "Ejercicio 3";
             this.ejercicio3ToolStripMenuItem.Click += new System.EventHandler(this.Ejercicio3ToolStripMenuItem_Click);
             // 
@@ -86,6 +86,7 @@
             this.ejercicio1ToolStripMenuItem1.Name = "ejercicio1ToolStripMenuItem1";
             this.ejercicio1ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.ejercicio1ToolStripMenuItem1.Text = "Ejercicio 1";
+            this.ejercicio1ToolStripMenuItem1.Click += new System.EventHandler(this.Ejercicio1ToolStripMenuItem1_Click);
             // 
             // ejercicio2ToolStripMenuItem
             // 

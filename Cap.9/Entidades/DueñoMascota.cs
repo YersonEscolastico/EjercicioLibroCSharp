@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicios_LibroCSharp.Cap._9.Entidades
 {
-    public class DueñoMascota
+    public struct DueñoMascota
     {
         public string NombreD { get; set; }
         public string edadD { get; set; }
