@@ -46,8 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cap.9\Entidades\Inventario Tienda\Productos.cs" />
-    <Compile Include="Cap.9\Entidades\Inventario Tienda\ProductosT.cs" />
+    <Compile Include="Cap.9\Entidades\Dueño.cs" />
+    <Compile Include="Cap.9\Entidades\Mascota.cs" />
+    <Compile Include="Cap.9\Entidades\Productos.cs" />
+    <Compile Include="Cap.9\Entidades\ProductosT.cs" />
     <Compile Include="Cap.9\UI\Registro\rProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,7 +96,6 @@
     <Folder Include="Cap.10\BLL\" />
     <Folder Include="Cap.10\Entidades\" />
     <Folder Include="Cap.10\UI\" />
-    <Folder Include="Cap.9\BLL\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
