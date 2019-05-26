@@ -8,5 +8,8 @@ namespace Ejercicios_LibroCSharp.Cap._9.Entidades
 {
     class Mascota
     {
+        public string NombreMascota { get; set; }
+        public string DueñoMascota { get; set; }
+        public string sexoMascota{ get; set; }
     }
 }

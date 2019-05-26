@@ -8,5 +8,11 @@ namespace Ejercicios_LibroCSharp.Cap._9.Entidades
 {
     class Dueño
     {
+        public string Nombre { get; set; }
+        public string edad { get; set; }
+        public string sexo { get; set; }
     }
 }
+
+
+

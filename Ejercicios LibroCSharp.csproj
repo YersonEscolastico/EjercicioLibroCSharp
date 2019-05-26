@@ -50,6 +50,12 @@
     <Compile Include="Cap.9\Entidades\Mascota.cs" />
     <Compile Include="Cap.9\Entidades\Productos.cs" />
     <Compile Include="Cap.9\Entidades\ProductosT.cs" />
+    <Compile Include="Cap.9\UI\Registro\rDueñoMascota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cap.9\UI\Registro\rDueñoMascota.Designer.cs">
+      <DependentUpon>rDueñoMascota.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cap.9\UI\Registro\rProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cap.9\UI\Registro\rDueñoMascota.resx">
+      <DependentUpon>rDueñoMascota.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cap.9\UI\Registro\rProductos.resx">
       <DependentUpon>rProductos.cs</DependentUpon>
     </EmbeddedResource>
