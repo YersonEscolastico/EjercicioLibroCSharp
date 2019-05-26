@@ -25,6 +25,38 @@ namespace Ejercicios_LibroCSharp.Cap._9.UI.Registro.Inventario_Tienda
 
         public ProductosT[] productos = new ProductosT[30];
 
+        private bool Validar()
+        {
+            bool paso = true;
+            MyErrorProvider.Clear();
+
+            if (NombreTextBox.Text == string.Empty)
+            {
+                MyErrorProvider.SetError(NombreTextBox, "Este campo no puede estar vacio");
+                NombreTextBox.Focus();
+                paso = false;
+            }
+            if (CodigoTextBox.Text == string.Empty)
+            {
+                MyErrorProvider.SetError(CodigoTextBox, "Este campo no puede estar vacio");
+                CodigoTextBox.Focus();
+                paso = false;
+            }
+            if (PrecioTextBox.Text == string.Empty)
+            {
+                MyErrorProvider.SetError(PrecioTextBox, "Este campo no puede estar vacio");
+                PrecioTextBox.Focus();
+                paso = false;
+            }
+
+            if (CodigoTextBox.Text == string.Empty)
+            {
+                MyErrorProvider.SetError(CodigoTextBox, "No puede dejar este campo vacio");
+                CodigoTextBox.Focus();
+                paso = false;
+            }
+            return paso;
+        }
 
 
         public void Limpiar()
@@ -38,6 +70,7 @@ namespace Ejercicios_LibroCSharp.Cap._9.UI.Registro.Inventario_Tienda
         public void Agregar()
         {
             ProductosT productos = new ProductosT();
+
             productos.Nombre = NombreTextBox.Text;
             productos.Codigo = CodigoTextBox.Text;
             productos.Cantidad = CaantidadTextBox.Text;
@@ -61,8 +94,10 @@ namespace Ejercicios_LibroCSharp.Cap._9.UI.Registro.Inventario_Tienda
 
         private void GuardarButton_Click(object sender, EventArgs e)
         {
-            Agregar();
+            if (Validar())
+                Agregar();
             Limpiar();
+          
         }
 
         private void MostrarButton_Click(object sender, EventArgs e)

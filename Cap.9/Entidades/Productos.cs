@@ -9,9 +9,9 @@ namespace Ejercicios_LibroCSharp.Cap._9.Entidades
 {
     public struct Productos
     {
-        public string Nombre;
-        public string Codigo;
-        public string Precio;
-        public string Cantidad;
+        public string Nombre { get; set; }
+        public string Codigo { get; set; }
+        public string Precio { get; set; }
+        public string Cantidad { get; set; }
     }
 }

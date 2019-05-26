@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.NombreTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,7 +42,9 @@
             this.MostrarButton = new System.Windows.Forms.Button();
             this.DataGridView = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
+            this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // NombreTextBox
@@ -160,6 +163,10 @@
             this.label5.TabIndex = 14;
             this.label5.Text = "Guardar productos de la tienda";
             // 
+            // MyErrorProvider
+            // 
+            this.MyErrorProvider.ContainerControl = this;
+            // 
             // rProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -181,6 +188,7 @@
             this.Name = "rProductos";
             this.Text = "rProductos";
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,5 +209,6 @@
         private System.Windows.Forms.Button MostrarButton;
         private System.Windows.Forms.DataGridView DataGridView;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ErrorProvider MyErrorProvider;
     }
 }

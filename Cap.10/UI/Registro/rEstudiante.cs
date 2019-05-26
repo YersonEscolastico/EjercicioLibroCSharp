@@ -14,62 +14,51 @@ using Ejercicios_LibroCSharp.Cap._10;
 
 namespace Ejercicios_LibroCSharp.Cap._10.UI.Registro
 {
-    public partial class rInventarioT : Form
+    public partial class rEstudiante : Form
     {
-        public rInventarioT()
+        public rEstudiante()
         {
             InitializeComponent();
         }
 
         ArrayList arrayList = new ArrayList();
 
-        public InventarioTienda [] productos = new InventarioTienda [30];
-
+        public Estudiante [] productos = new Estudiante[30];
 
         private bool Validar()
         {
             bool paso = true;
             MyErrorProvider.Clear();
 
-            if (DescripcionTextBox.Text == string.Empty)
+            if (NombreTextBox.Text == string.Empty)
             {
-                MyErrorProvider.SetError(DescripcionTextBox, "Este campo no puede estar vacio");
-                DescripcionTextBox.Focus();
+                MyErrorProvider.SetError(NombreTextBox, "Este campo no puede estar vacio");
+                NombreTextBox.Focus();
                 paso = false;
             }
-            if (PrecioTextBox.Text == string.Empty)
+            if (PadreTextBox.Text == string.Empty)
             {
-                MyErrorProvider.SetError(PrecioTextBox, "Este campo no puede estar vacio");
-                PrecioTextBox.Focus();
-                paso = false;
-            }
-            if (CantidadTextBox.Text == string.Empty)
-            {
-                MyErrorProvider.SetError(CantidadTextBox, "Este campo no puede estar vacio");
-                CantidadTextBox.Focus();
+                MyErrorProvider.SetError(MadreTextBox, "Este campo no puede estar vacio");
+                MadreTextBox.Focus();
                 paso = false;
             }
             return paso;
         }
 
-
         public void Limpiar()
         {
-            IdNumericUpDown.Text = string.Empty;
-            DescripcionTextBox.Text = string.Empty;
-            PrecioTextBox.Text = string.Empty;
-            CantidadTextBox.Text = string.Empty;
+            NombreTextBox.Text = string.Empty;
+            PadreTextBox.Text = string.Empty;
+            MadreTextBox.Text = string.Empty;
         }
 
         public void Agregar()
         {
-            InventarioTienda inventario = new  InventarioTienda();
-            inventario.Precio = PrecioTextBox.Text;
-            inventario.Nombre = DescripcionTextBox.Text;
-            inventario.Precio = PrecioTextBox.Text;
-            inventario.Cantidad = CantidadTextBox.Text;
-            inventario.ProductoId = IdNumericUpDown.Text;
-
+            Estudiante estudiante = new Estudiante();
+            estudiante.Nombre = NombreTextBox.Text;
+            estudiante.Padre = PadreTextBox.Text;
+            estudiante.Madre = MadreTextBox.Text;
+         
             arrayList.Add(productos);
             MessageBox.Show("!!Producto Guardado!!");
         }
@@ -85,12 +74,10 @@ namespace Ejercicios_LibroCSharp.Cap._10.UI.Registro
             Limpiar();
         }
 
-        private void GuardarButton_Click(object sender, EventArgs e)
+        private void AgregarButton_Click(object sender, EventArgs e)
         {
-            if (Validar()) 
             Agregar();
             Limpiar();
-           
         }
 
         private void MostrarButton_Click(object sender, EventArgs e)

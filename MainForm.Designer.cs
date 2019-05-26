@@ -93,6 +93,7 @@
             this.ejercicio2ToolStripMenuItem.Name = "ejercicio2ToolStripMenuItem";
             this.ejercicio2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ejercicio2ToolStripMenuItem.Text = "Ejercicio 2";
+            this.ejercicio2ToolStripMenuItem.Click += new System.EventHandler(this.Ejercicio2ToolStripMenuItem_Click);
             // 
             // MainForm
             // 

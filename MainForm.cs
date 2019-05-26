@@ -38,5 +38,11 @@ namespace Ejercicios_LibroCSharp
             rInventarioT frm = new rInventarioT();
             frm.Show();
         }
+
+        private void Ejercicio2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rEstudiante frm = new rEstudiante();
+            frm.Show();
+        }
     }
 }
