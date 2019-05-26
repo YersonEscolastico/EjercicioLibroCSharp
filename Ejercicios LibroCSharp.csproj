@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cap.9\Entidades\DueñoMascota.cs" />
+    <Compile Include="Cap.10\Entidades\InventarioTienda.cs" />
     <Compile Include="Cap.9\Entidades\Productos.cs" />
     <Compile Include="Cap.9\Entidades\ProductosT.cs" />
     <Compile Include="Cap.9\UI\Registro\rDueñoMascota.cs">
@@ -102,7 +103,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Cap.10\BLL\" />
-    <Folder Include="Cap.10\Entidades\" />
     <Folder Include="Cap.10\UI\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
