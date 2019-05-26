@@ -35,25 +35,14 @@ namespace Ejercicios_LibroCSharp.Cap._9.UI.Registro.Inventario_Tienda
             CodigoTextBox.Text = string.Empty;
         }
 
-        public void Productos()
-        {
-            ProductosT productosT = new ProductosT();
-            productosT.Nombre = NombreTextBox.Text;
-            productosT.Codigo = CodigoTextBox.Text;
-            productosT.Precio = PrecioTextBox.Text;
-            productosT.Cantidad = CaantidadTextBox.Text;
-
-            DataGridView.DataSource = null;
-            DataGridView.DataSource = arrayList;
-        }
-
         public void Agregar()
         {
             ProductosT productos = new ProductosT();
             productos.Nombre = NombreTextBox.Text;
             productos.Codigo = CodigoTextBox.Text;
-            productos.Precio = PrecioTextBox.Text;
             productos.Cantidad = CaantidadTextBox.Text;
+            productos.Precio = PrecioTextBox.Text;
+            
 
             arrayList.Add(productos);
             MessageBox.Show("!!Producto Guardado!!");

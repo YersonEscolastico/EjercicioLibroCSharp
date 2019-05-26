@@ -46,8 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cap.9\Entidades\Dueño.cs" />
-    <Compile Include="Cap.9\Entidades\Mascota.cs" />
+    <Compile Include="Cap.9\Entidades\DueñoMascota.cs" />
     <Compile Include="Cap.9\Entidades\Productos.cs" />
     <Compile Include="Cap.9\Entidades\ProductosT.cs" />
     <Compile Include="Cap.9\UI\Registro\rDueñoMascota.cs">

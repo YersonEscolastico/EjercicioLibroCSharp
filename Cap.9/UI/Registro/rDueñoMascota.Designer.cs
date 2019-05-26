@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -36,17 +37,19 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.NombreDTextBox = new System.Windows.Forms.TextBox();
+            this.SexoDTextBox = new System.Windows.Forms.TextBox();
+            this.EdadTextBox = new System.Windows.Forms.TextBox();
+            this.SexoTextBox = new System.Windows.Forms.TextBox();
+            this.DuenoTextBox = new System.Windows.Forms.TextBox();
+            this.NombreMTextBox = new System.Windows.Forms.TextBox();
             this.NuevoButton = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.MostrarButton = new System.Windows.Forms.Button();
+            this.GuardarButton = new System.Windows.Forms.Button();
+            this.DataGridView = new System.Windows.Forms.DataGridView();
+            this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -121,47 +124,47 @@
             this.label8.TabIndex = 7;
             this.label8.Text = "Nombre";
             // 
-            // textBox1
+            // NombreDTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(84, 45);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 8;
+            this.NombreDTextBox.Location = new System.Drawing.Point(84, 45);
+            this.NombreDTextBox.Name = "NombreDTextBox";
+            this.NombreDTextBox.Size = new System.Drawing.Size(100, 20);
+            this.NombreDTextBox.TabIndex = 8;
             // 
-            // textBox2
+            // SexoDTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(84, 102);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 9;
+            this.SexoDTextBox.Location = new System.Drawing.Point(84, 102);
+            this.SexoDTextBox.Name = "SexoDTextBox";
+            this.SexoDTextBox.Size = new System.Drawing.Size(100, 20);
+            this.SexoDTextBox.TabIndex = 9;
             // 
-            // textBox3
+            // EdadTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(84, 76);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 10;
+            this.EdadTextBox.Location = new System.Drawing.Point(84, 76);
+            this.EdadTextBox.Name = "EdadTextBox";
+            this.EdadTextBox.Size = new System.Drawing.Size(100, 20);
+            this.EdadTextBox.TabIndex = 10;
             // 
-            // textBox4
+            // SexoTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(84, 235);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 11;
+            this.SexoTextBox.Location = new System.Drawing.Point(84, 235);
+            this.SexoTextBox.Name = "SexoTextBox";
+            this.SexoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.SexoTextBox.TabIndex = 11;
             // 
-            // textBox5
+            // DuenoTextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(84, 209);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 12;
+            this.DuenoTextBox.Location = new System.Drawing.Point(84, 209);
+            this.DuenoTextBox.Name = "DuenoTextBox";
+            this.DuenoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.DuenoTextBox.TabIndex = 12;
             // 
-            // textBox6
+            // NombreMTextBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(84, 181);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 13;
+            this.NombreMTextBox.Location = new System.Drawing.Point(84, 181);
+            this.NombreMTextBox.Name = "NombreMTextBox";
+            this.NombreMTextBox.Size = new System.Drawing.Size(100, 20);
+            this.NombreMTextBox.TabIndex = 13;
             // 
             // NuevoButton
             // 
@@ -171,48 +174,55 @@
             this.NuevoButton.TabIndex = 14;
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.UseVisualStyleBackColor = true;
+            this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
             // 
-            // button2
+            // MostrarButton
             // 
-            this.button2.Location = new System.Drawing.Point(226, 291);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Mostrar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.MostrarButton.Location = new System.Drawing.Point(226, 291);
+            this.MostrarButton.Name = "MostrarButton";
+            this.MostrarButton.Size = new System.Drawing.Size(75, 23);
+            this.MostrarButton.TabIndex = 15;
+            this.MostrarButton.Text = "Mostrar";
+            this.MostrarButton.UseVisualStyleBackColor = true;
+            this.MostrarButton.Click += new System.EventHandler(this.MostrarButton_Click);
             // 
-            // button3
+            // GuardarButton
             // 
-            this.button3.Location = new System.Drawing.Point(109, 291);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Guardar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.GuardarButton.Location = new System.Drawing.Point(109, 291);
+            this.GuardarButton.Name = "GuardarButton";
+            this.GuardarButton.Size = new System.Drawing.Size(75, 23);
+            this.GuardarButton.TabIndex = 16;
+            this.GuardarButton.Text = "Guardar";
+            this.GuardarButton.UseVisualStyleBackColor = true;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
             // 
-            // dataGridView1
+            // DataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 320);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(285, 121);
-            this.dataGridView1.TabIndex = 17;
+            this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridView.Location = new System.Drawing.Point(16, 320);
+            this.DataGridView.Name = "DataGridView";
+            this.DataGridView.Size = new System.Drawing.Size(285, 121);
+            this.DataGridView.TabIndex = 17;
+            // 
+            // MyErrorProvider
+            // 
+            this.MyErrorProvider.ContainerControl = this;
             // 
             // rDueñoMascota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(310, 450);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.DataGridView);
+            this.Controls.Add(this.GuardarButton);
+            this.Controls.Add(this.MostrarButton);
             this.Controls.Add(this.NuevoButton);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.NombreMTextBox);
+            this.Controls.Add(this.DuenoTextBox);
+            this.Controls.Add(this.SexoTextBox);
+            this.Controls.Add(this.EdadTextBox);
+            this.Controls.Add(this.SexoDTextBox);
+            this.Controls.Add(this.NombreDTextBox);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -223,7 +233,8 @@
             this.Controls.Add(this.label1);
             this.Name = "rDueñoMascota";
             this.Text = "rDueñoMascota";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,15 +250,16 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox NombreDTextBox;
+        private System.Windows.Forms.TextBox SexoDTextBox;
+        private System.Windows.Forms.TextBox EdadTextBox;
+        private System.Windows.Forms.TextBox SexoTextBox;
+        private System.Windows.Forms.TextBox DuenoTextBox;
+        private System.Windows.Forms.TextBox NombreMTextBox;
         private System.Windows.Forms.Button NuevoButton;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button MostrarButton;
+        private System.Windows.Forms.Button GuardarButton;
+        private System.Windows.Forms.DataGridView DataGridView;
+        private System.Windows.Forms.ErrorProvider MyErrorProvider;
     }
 }

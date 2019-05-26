@@ -31,6 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cap9ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ejercicio1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ejercicio3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +48,8 @@
             // cap9ToolStripMenuItem
             // 
             this.cap9ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ejercicio1ToolStripMenuItem});
+            this.ejercicio1ToolStripMenuItem,
+            this.ejercicio3ToolStripMenuItem});
             this.cap9ToolStripMenuItem.Name = "cap9ToolStripMenuItem";
             this.cap9ToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.cap9ToolStripMenuItem.Text = "Cap.9";
@@ -58,6 +60,13 @@
             this.ejercicio1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ejercicio1ToolStripMenuItem.Text = "Ejercicio 1";
             this.ejercicio1ToolStripMenuItem.Click += new System.EventHandler(this.Ejercicio1ToolStripMenuItem_Click);
+            // 
+            // ejercicio3ToolStripMenuItem
+            // 
+            this.ejercicio3ToolStripMenuItem.Name = "ejercicio3ToolStripMenuItem";
+            this.ejercicio3ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ejercicio3ToolStripMenuItem.Text = "Ejercicio 3";
+            this.ejercicio3ToolStripMenuItem.Click += new System.EventHandler(this.Ejercicio3ToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -80,6 +89,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem cap9ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ejercicio1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ejercicio3ToolStripMenuItem;
     }
 }
 
