@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicios_LibroCSharp.Cap._10.Entidades
 {
-    public struct Estudiante
+    public class Estudiante
     {
         public string Nombre { get; set; }
         public string Padre { get; set; }

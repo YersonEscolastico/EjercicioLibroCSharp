@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicios_LibroCSharp.Cap._10.Entidades
 {
-    public struct InventarioTienda
+    public class InventarioTienda
         {
             public string ProductoId { get; set; }
             public string Nombre { get; set; }
